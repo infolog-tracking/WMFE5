@@ -16,8 +16,8 @@
           "category": "Contributed",
           "url": "https://raw.githubusercontent.com/infolog-tracking/WMFE5/master/infologWMFE5_1.0.0.zip",
           "archiveFileName": "infologWMFE5_1.0.0.zip",
-          "checksum": "SHA-256:DBCA77FC38815CE46811C091C6B801A4FD90526E8D3135A009F989B72FB6EE45",
-          "size": "1008723",
+          "checksum": "SHA-256:0998A0FF0261D62B9DF8962C69B84FA9E28E1222B703D7685DD3B4D43E2BCF68",
+          "size": "1008239",
           "boards": [
             {
               "name": "infolog WMFE5 tracking"
