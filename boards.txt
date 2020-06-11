@@ -1,0 +1,45 @@
+# Copyright (c) 2014-2017 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# Arduino infolog
+# ---------------
+infolog.name=Arduino infolog
+infolog.vid.0=0x2341
+infolog.pid.0=0x804f
+infolog.vid.1=0x2341
+infolog.pid.1=0x004f
+
+infolog.debug.tool=gdb
+infolog.upload.tool=bossac
+infolog.upload.protocol=sam-ba
+infolog.upload.maximum_size=262144
+infolog.upload.use_1200bps_touch=true
+infolog.upload.wait_for_upload_port=true
+infolog.upload.native_usb=true
+infolog.build.mcu=cortex-m0plus
+infolog.build.f_cpu=48000000L
+infolog.build.usb_product="Arduino infolog"
+infolog.build.usb_manufacturer="infolog LLC"
+infolog.build.board=SAMD_INFOLOG
+infolog.build.core=arduino
+infolog.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags}
+infolog.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+infolog.build.openocdscript=openocd_scripts/arduino_infolog.cfg
+infolog.build.variant=infolog
+infolog.build.vid=0x2341
+infolog.build.pid=0x804f
+infolog.bootloader.tool=openocd
+infolog.bootloader.file=mkrzero/samd21_sam_ba_arduino_mkrzero.bin
